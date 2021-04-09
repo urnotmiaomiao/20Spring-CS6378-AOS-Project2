@@ -1,0 +1,30 @@
+Here is some time slot for my demo video. Hope this could be helpful :)
+
+0:00:00 downloaded project, uploaded jar files to servers, created s0-s6 folders
+0:03:50 run project - network, TCP connection
+0:04:54 test 1st case - created object1, updated object1, checked object1's content
+0:10:28 test 2nd case - disabled connection
+0:17:16 test 2nd case - clients in 2 different partitions tried to update object1, and their results
+
+
+Below are commands and network partition I used in the demo.
+
+cd Client
+java -jar AClient.jar
+
+cd Server
+java -jar AServer.jar
+
+mkdir s0
+mkdir s1
+mkdir s2
+mkdir s3
+mkdir s4
+mkdir s5
+mkdir s6
+
+1: s0 s1 s5 s6  c0 c1 c2
+
+2: s2 s3 s4  c3 c4
+
+object1 s4-6
